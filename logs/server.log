@@ -1,0 +1,23 @@
+2025-10-28 15:12:19.438 [main] INFO  - Loading server properties...
+2025-10-28 15:12:19.476 [main] INFO  - Selected English (eng) as the base language
+2025-10-28 15:12:19.481 [main] INFO  - Starting Minecraft: BE server version §bv1.21.111§r
+2025-10-28 15:12:22.348 [main] INFO  - Loading recipes...
+2025-10-28 15:12:23.504 [main] INFO  - Successfully loaded 2628 recipes
+2025-10-28 15:12:23.522 [main] INFO  - Successfully loaded 0 resource packs
+2025-10-28 15:12:23.543 [main] INFO  - Opening server on 0.0.0.0:19132
+2025-10-28 15:12:23.848 [main] WARN  - Failed to find a usable hardware address from the network interfaces; using random bytes: 77:95:8a:71:1d:c6:1a:c3
+2025-10-28 15:12:23.982 [main] WARN  - Encryption is not enabled! For better security, it's recommended to enable it (network.encryption: true in nukkit.yml) if you don't use a proxy software.
+2025-10-28 15:12:23.984 [main] WARN  - Xbox authentication is not enabled! It's recommended to enable it (xbox-auth=on in server.properties) if you don't use a proxy software or an authentication plugin.
+2025-10-28 15:12:23.986 [main] INFO  - This server is running Nukkit version §egit-null§f "§b§f" (API 1.1.0)
+2025-10-28 15:12:23.987 [main] INFO  - Nukkit is distributed under the GPL License
+2025-10-28 15:12:24.691 [main] INFO  - Preparing level "§aworld§f"
+2025-10-28 15:12:26.813 [main] INFO  - Preparing level "§anether§f"
+2025-10-28 15:12:26.868 [main] INFO  - Preparing level "§athe_end§f"
+2025-10-28 15:12:26.947 [main] INFO  - Starting GS4 status listener
+2025-10-28 15:12:26.949 [main] INFO  - Setting query port to 19132
+2025-10-28 15:12:26.951 [main] INFO  - Query is running on 0.0.0.0:19132
+2025-10-28 15:12:26.953 [main] INFO  - Done (7.926s)! For help, type "help" or "?"
+2025-10-28 15:12:28.262 [main] INFO  - Unloading level "§aworld§f"
+2025-10-28 15:12:28.305 [main] INFO  - Unloading level "§anether§f"
+2025-10-28 15:12:28.310 [main] INFO  - Unloading level "§athe_end§f"
+2025-10-28 15:12:28.333 [main] INFO  - Stopping other threads...

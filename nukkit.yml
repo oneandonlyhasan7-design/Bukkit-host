@@ -1,0 +1,95 @@
+# Nukkit Configuration - Optimized for Ultra-Low RAM and Low Latency
+
+settings:
+ # Language
+ language: "eng"
+ force-language: false
+ shutdown-message: "Server closed"
+ 
+ # Performance - Ultra-Low RAM Configuration
+ async-chunks: true
+ auto-tick-rate: true
+ auto-tick-rate-limit: 20
+ base-tick-rate: 1
+ always-tick-players: false
+ 
+ # Memory Optimization
+ chunk-sending:
+  max-chunks: 192
+  per-tick: 4
+  spawn-threshold: 56
+ chunk-ticking:
+  per-tick: 40
+  tick-radius: 3
+  light-updates: false
+  clear-tick-list: true
+ chunk-generation:
+  queue-size: 8
+  population-queue-size: 8
+  
+ # Network Optimization - Low Latency
+ batch-threshold: 0
+ compression-level: 6
+ async-compression: true
+ 
+ # Entity Optimization
+ entity-ai: true
+ entity-ai-update-frequency: 1
+ 
+ # Caching
+ cache-chunks: false
+ 
+ # Debug
+ allow-shaded: true
+ debug:
+  level: 1
+  commands: false
+  
+network:
+ batch-threshold: 0
+ compression-level: 6
+ 
+level-settings:
+ default-format: leveldb
+ auto-tick-rate: true
+ auto-tick-rate-limit: 20
+ base-tick-rate: 1
+ always-tick-players: false
+ 
+memory:
+ global-limit: 0
+ main-limit: 0
+ main-hard-limit: 1024
+ check-rate: 20
+ continuous-trigger: true
+ continuous-trigger-rate: 30
+ 
+ garbage-collection:
+  period: 36000
+  collect-async-worker: true
+  low-memory-trigger: true
+  
+ max-chunks:
+  trigger-limit: 96
+  trigger-chunk-collect: true
+  low-memory-trigger: true
+  
+ world-caches:
+  disable-chunk-cache: true
+  low-memory-trigger: true
+  
+commands:
+ default: true
+ 
+player:
+ save-player-data: true
+ anti-cheat:
+  allow-movement-cheats: false
+  
+aliases:
+ showtheversion: version
+
+worlds:
+ world:
+  seed: 404
+  generator: default
