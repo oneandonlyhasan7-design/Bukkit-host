@@ -1,66 +1,104 @@
-# Nukkit Minecraft Bedrock Server
+# Vcraft Goated Panel - Nukkit Server
 
 ## Overview
-This is a Nukkit server - a Minecraft Pocket Edition (Bedrock Edition) server implementation written in Java. Nukkit allows players on mobile devices, Windows 10, Xbox, PlayStation, and Nintendo Switch to join and play together.
+Minecraft Bedrock Edition server optimized for Replit with custom Vcraft branding and proper mob spawning mechanics.
 
-**Current State:** The server is configured and ready to run. It's set up with default English language settings and will automatically start when you run the project.
+**Current State:** Fully configured and running with Replit-optimized performance settings.
 
 ## Recent Changes
-- **November 1, 2025**: Initial setup for Replit environment
+- **November 1, 2025**: Replit environment setup and optimization
   - Installed Java (GraalVM 19.0.2) runtime
-  - Configured Nukkit server to run automatically
-  - Created .gitignore for server files
-  - Server configured on default port 19132
+  - Configured custom Vcraft branding
+  - Applied Replit-optimized JVM settings (512MB-1GB heap)
+  - Enabled native LevelDB for improved performance
+  - Configured proper mob spawning with tick-radius 3
+  - Optimized network compression with Snappy
+  - Auto-adaptive async workers
+
+## Performance Optimizations
+
+### JVM Configuration
+- **Memory**: 512MB-1GB (optimized for Replit)
+- **Garbage Collection**: G1GC with 50ms max pause time
+- **Heap Management**: Optimized for low latency
+
+### Nukkit Configuration
+- **Async Workers**: Auto-detect (adapts to available cores)
+- **Chunk Ticking**: 40 chunks per tick
+- **Chunk Sending**: 4 chunks per tick
+- **Chunk Generation**: 8-queue size
+- **LevelDB Cache**: 64MB
+- **Native LevelDB**: Enabled
+- **Snappy Compression**: Enabled
+- **Chunk Caching**: Disabled (memory optimization)
+
+### Mob Spawning
+- **Tick Radius**: 3 chunks (optimal for mob spawning)
+- **Block Ticking**: Enabled (required for mobs)
+- **Always Tick Players**: Enabled
+- **View Distance**: 12 chunks
+- **Spawn Protection**: Disabled
 
 ## Server Information
+- **Branding**: Vcraft - Goated Panel
 - **Server Software**: Nukkit 1.0 (git-9ab10a6)
 - **API Version**: 1.1.0
 - **Minecraft Version**: v1.21.110
-- **Server Port**: 19132 (UDP - Minecraft Bedrock default)
+- **Server Port**: 19132 (UDP)
+- **Server IP**: 0.0.0.0
 - **Default Worlds**: world, nether, the_end
-
-## Configuration Files
-- `server.properties`: Main server configuration (MOTD, port, game settings)
-- `nukkit.yml`: Advanced Nukkit-specific settings (performance, chunk management)
+- **Query**: Enabled on port 19132
 
 ## How to Connect
-Players can connect to this server using:
-1. Open Minecraft Bedrock Edition
+Players connect using Minecraft Bedrock Edition:
+1. Open Minecraft (Mobile, Windows 10, Console)
 2. Go to "Play" → "Servers" → "Add Server"
-3. Enter the server address (Replit will provide the external address)
-4. Use port: 19132
+3. Enter server name: "Vcraft"
+4. Enter server address and port 19132
+5. Join and play!
 
 ## Key Settings
-- **Game Mode**: Survival (0)
-- **Difficulty**: Normal (2)
+- **MOTD**: §l§6Vcraft §r§7- §eGoated Panel
+- **Sub-MOTD**: §aOptimized §7• §bZero Lag §7• §dAll Versions
+- **Game Mode**: Survival
+- **Difficulty**: Normal
 - **PvP**: Enabled
-- **Xbox Authentication**: Enabled (players need Xbox accounts)
-- **View Distance**: 10 chunks
-- **White-list**: Disabled (anyone can join)
+- **Flight**: Allowed
+- **Xbox Authentication**: Enabled
+- **View Distance**: 12 chunks
 
 ## Server Management
-The server runs automatically when you start the Repl. To manage it:
-- View server logs in the Console tab
-- Stop/restart using the workflow controls
-- Modify settings by editing `server.properties` or `nukkit.yml`
+- Auto-starts with optimized settings
+- View logs in Console tab
+- Restart using workflow controls
+- Edit `server.properties` for game settings
+- Edit `nukkit.yml` for performance tuning
 
 ## Plugins
-Place plugin JAR files in the `plugins/` directory and restart the server to load them.
+Place plugin JAR files in `plugins/` directory and restart.
 
 ## Project Architecture
 ```
 .
 ├── nukkit-1.0-20251001.065813-1220.jar  # Server executable
-├── server.properties                     # Main configuration
-├── nukkit.yml                           # Advanced configuration
-├── worlds/                              # Generated world data
+├── start.sh                             # Optimized startup script
+├── server.properties                    # Game configuration
+├── nukkit.yml                           # Performance configuration
+├── worlds/                              # World data
 ├── plugins/                             # Server plugins
 ├── players/                             # Player data
 └── logs/                                # Server logs
 ```
 
-## Notes
-- This is a Bedrock Edition server (not Java Edition)
-- Server data (worlds, players) is stored locally and persists between runs
-- The server uses UDP protocol on port 19132
-- Make sure to configure ops.txt to add server administrators
+## Performance Features
+✅ Replit-optimized memory settings  
+✅ Proper mob spawning mechanics  
+✅ Native LevelDB for speed  
+✅ Snappy compression for network  
+✅ Auto-adaptive async workers  
+✅ Optimized garbage collection  
+✅ Custom Vcraft branding  
+
+## Credits
+**Powered by Vcraft - Goated Panel**  
+Optimized Minecraft Bedrock server for the best experience.

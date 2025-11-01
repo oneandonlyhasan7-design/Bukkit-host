@@ -8,23 +8,22 @@ settings:
  language: "eng"
  #Whether to send all strings translated to server locale or let the device handle them
  force-language: false
- shutdown-message: "Server closed"
+ shutdown-message: "Vcraft Server Closed - Come back soon!"
  #Allow listing plugins via Query
  query-plugins: true
  #Show a console message when a plugin uses deprecated API methods
- deprecated-verbose: true
- #Number of AsyncTask workers
- #If set to auto, it'll try to detect the number of cores (and at least 4)
+ deprecated-verbose: false
+ #Number of AsyncTask workers - Auto-detect for best performance
  async-workers: auto
 
 network:
  #Threshold for batching packets, in bytes. Only these packets will be compressed
  #Set to 0 to compress everything, -1 to disable
- batch-threshold: 256
+ batch-threshold: 512
  #Compression level used of Zlib when sending batched packets. Higher = more CPU, less bandwidth usage
- compression-level: 5
+ compression-level: 3
  #Enable high performance packet compression using Snappy (experimental)
- compression-use-snappy: false
+ compression-use-snappy: true
  #Enable network encryption
  encryption: true
 
@@ -41,7 +40,7 @@ level-settings:
  #Sets the base tick rate (1 = 20 ticks per second, 2 = 10 ticks per second, etc.)
  base-tick-rate: 1
  #Tick all players each tick even when other settings disallow this
- always-tick-players: false
+ always-tick-players: true
 
 chunk-sending:
  #Amount of chunks sent to players per tick
@@ -55,9 +54,11 @@ chunk-sending:
 chunk-ticking:
  #Max amount of chunks processed each tick
  per-tick: 40
- #Radius of chunks around a player to tick
+ #Radius of chunks around a player to tick - critical for mob spawning
  tick-radius: 3
  clear-tick-list: false
+ #Enable mob spawning in ticked chunks
+ disable-block-ticking: false
 
 chunk-generation:
  #Max. amount of chunks in the waiting queue to be generated
@@ -67,9 +68,9 @@ chunk-generation:
 
 leveldb:
  #Use native LevelDB implementation for better performance
- use-native: false
- #Set LevelDB memory cache size
- cache-size-mb: 80
+ use-native: true
+ #Set LevelDB memory cache size - optimized for Replit
+ cache-size-mb: 64
 
 ticks-per:
  #How often worlds and player data are saved when auto-save=on in server.properties
