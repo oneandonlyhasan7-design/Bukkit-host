@@ -1,19 +1,22 @@
-# Vcraft Goated Panel - Nukkit Server
+# Vcraft Goated Panel 🐐 - Minecraft Server
 
 ## Overview
 Minecraft Bedrock Edition server optimized for Replit with custom Vcraft branding and proper mob spawning mechanics.
 
+**Organization:** Vcraft  
+**Owner:** Goated 🐐 Panel  
 **Current State:** Fully configured and running with Replit-optimized performance settings.
 
 ## Recent Changes
 - **November 1, 2025**: Replit environment setup and optimization
   - Installed Java (GraalVM 19.0.2) runtime
-  - Configured custom Vcraft branding
+  - Configured custom Vcraft Goated Panel branding
   - Applied Replit-optimized JVM settings (512MB-1GB heap)
   - Enabled native LevelDB for improved performance
   - Configured proper mob spawning with tick-radius 3
   - Optimized network compression with Snappy
   - Auto-adaptive async workers
+  - Custom console branding with Vcraft credits
 
 ## Performance Optimizations
 
@@ -22,7 +25,7 @@ Minecraft Bedrock Edition server optimized for Replit with custom Vcraft brandin
 - **Garbage Collection**: G1GC with 50ms max pause time
 - **Heap Management**: Optimized for low latency
 
-### Nukkit Configuration
+### Server Configuration
 - **Async Workers**: Auto-detect (adapts to available cores)
 - **Chunk Ticking**: 40 chunks per tick
 - **Chunk Sending**: 4 chunks per tick
@@ -40,8 +43,8 @@ Minecraft Bedrock Edition server optimized for Replit with custom Vcraft brandin
 - **Spawn Protection**: Disabled
 
 ## Server Information
-- **Branding**: Vcraft - Goated Panel
-- **Server Software**: Nukkit 1.0 (git-9ab10a6)
+- **Branding**: Vcraft Goated Panel 🐐
+- **Server Software**: Vcraft Goated Panel (Vcraft Edition)
 - **API Version**: 1.1.0
 - **Minecraft Version**: v1.21.110
 - **Server Port**: 19132 (UDP)
@@ -68,11 +71,11 @@ Players connect using Minecraft Bedrock Edition:
 - **View Distance**: 12 chunks
 
 ## Server Management
-- Auto-starts with optimized settings
+- Auto-starts with custom Vcraft branding
 - View logs in Console tab
 - Restart using workflow controls
 - Edit `server.properties` for game settings
-- Edit `nukkit.yml` for performance tuning
+- Edit configuration files for performance tuning
 
 ## Plugins
 Place plugin JAR files in `plugins/` directory and restart.
@@ -81,7 +84,7 @@ Place plugin JAR files in `plugins/` directory and restart.
 ```
 .
 ├── nukkit-1.0-20251001.065813-1220.jar  # Server executable
-├── start.sh                             # Optimized startup script
+├── start.sh                             # Vcraft branded startup script
 ├── server.properties                    # Game configuration
 ├── nukkit.yml                           # Performance configuration
 ├── worlds/                              # World data
@@ -97,8 +100,11 @@ Place plugin JAR files in `plugins/` directory and restart.
 ✅ Snappy compression for network  
 ✅ Auto-adaptive async workers  
 ✅ Optimized garbage collection  
-✅ Custom Vcraft branding  
+✅ Custom Vcraft Goated Panel branding  
+✅ Console fully branded with Vcraft credits  
 
 ## Credits
-**Powered by Vcraft - Goated Panel**  
+**🐐 Powered by Vcraft - Goated Panel 🐐**  
+**Organization:** Vcraft  
+**Owner:** Goated Panel  
 Optimized Minecraft Bedrock server for the best experience.
