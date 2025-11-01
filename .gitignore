@@ -1,0 +1,30 @@
+# Nukkit server files
+worlds/
+players/
+plugins/
+logs/
+*.log
+
+# Configuration files with sensitive data
+banned-ips.txt
+banned-players.txt
+ops.txt
+white-list.txt
+
+# Generated files
+nukkit.yml
+server.properties
+
+# Java
+*.class
+*.jar
+!nukkit-*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store

@@ -4,3 +4,26 @@ expertMode = true
 
 [nix]
 channel = "stable-25_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Nukkit Server"
+
+[[workflows.workflow]]
+name = "Nukkit Server"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "java -jar nukkit-1.0-20251001.065813-1220.jar"
+
+[workflows.workflow.metadata]
+outputType = "console"
